@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="CdbCalculator.Api/CdbCalculator.Api.csproj" />
+  <Project Path="CdbCalculator.Application/CdbCalculator.Application.csproj" />
+  <Project Path="CdbCalculator.Domain/CdbCalculator.Domain.csproj" />
+  <Project Path="CdbCalculator.Infrastructure/CdbCalculator.Infrastructure.csproj" />
+  <Project Path="CdbCalculator.Tests/CdbCalculator.Tests.csproj" />
+</Solution>

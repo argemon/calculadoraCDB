@@ -1,0 +1,17 @@
+bin/
+obj/
+.vs/
+TestResults/
+coverage/
+dist/
+node_modules/
+.angular/
+
+*.user
+*.suo
+*.db
+*.log
+
+# Local development secrets loaded by DotNetEnv.
+.env
+.env.*

@@ -1,0 +1,9 @@
+<Project>
+  <PropertyGroup>
+    <Company>CdbCalculator</Company>
+    <Product>CDB Calculator</Product>
+    <LangVersion>latest</LangVersion>
+    <Deterministic>true</Deterministic>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+  </PropertyGroup>
+</Project>
