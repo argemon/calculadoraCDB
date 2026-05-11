@@ -1,0 +1,46 @@
+@use '@angular/material' as mat;
+
+html {
+  @include mat.theme(
+    (
+      color: (
+        theme-type: light,
+        primary: mat.$azure-palette,
+        tertiary: mat.$chartreuse-palette,
+      ),
+      typography: Manrope,
+      density: 0,
+    )
+  );
+}
+
+:root {
+  --app-bg: #f4f7f1;
+  --app-ink: #162018;
+  --app-muted: #62705f;
+  --app-line: #d9e2d4;
+  --app-surface: #ffffff;
+  --app-accent: #0f766e;
+  --app-profit: #1b8f4d;
+  --app-warning: #b45309;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: var(--app-ink);
+  font-family: Manrope, sans-serif;
+  background:
+    linear-gradient(135deg, rgba(15, 118, 110, 0.12), transparent 32%),
+    linear-gradient(225deg, rgba(132, 204, 22, 0.18), transparent 30%),
+    var(--app-bg);
+}
+
+button,
+input {
+  font-family: inherit;
+}

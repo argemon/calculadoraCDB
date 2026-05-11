@@ -1,0 +1,45 @@
+.result-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.875rem;
+  align-items: center;
+  min-height: 112px;
+  padding: 1rem;
+  border: 1px solid var(--app-line);
+  border-radius: 8px;
+  background: var(--app-surface);
+  box-shadow: 0 16px 40px rgba(22, 32, 24, 0.06);
+}
+
+.result-card__icon {
+  display: inline-grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  color: var(--app-accent);
+  background: rgba(15, 118, 110, 0.12);
+}
+
+p {
+  margin: 0 0 0.35rem;
+  color: var(--app-muted);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+strong {
+  display: block;
+  font-size: clamp(1.1rem, 2vw, 1.55rem);
+  line-height: 1.1;
+}
+
+.result-card--profit .result-card__icon {
+  color: var(--app-profit);
+  background: rgba(27, 143, 77, 0.12);
+}
+
+.result-card--tax .result-card__icon {
+  color: var(--app-warning);
+  background: rgba(180, 83, 9, 0.12);
+}

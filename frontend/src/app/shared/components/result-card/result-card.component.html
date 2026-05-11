@@ -1,0 +1,9 @@
+<section class="result-card" [class.result-card--profit]="tone === 'profit'" [class.result-card--tax]="tone === 'tax'">
+  <span class="result-card__icon" *ngIf="icon">
+    <mat-icon>{{ icon }}</mat-icon>
+  </span>
+  <div>
+    <p>{{ label }}</p>
+    <strong>{{ value | currency: 'BRL' : 'symbol' : '1.2-2' : 'pt-BR' }}</strong>
+  </div>
+</section>

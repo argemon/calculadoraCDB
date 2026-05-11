@@ -1,0 +1,9 @@
+@CdbCalculator.Api_HostAddress = https://localhost:7081
+
+POST {{CdbCalculator.Api_HostAddress}}/api/v1/cdb-calculator/calculate
+Content-Type: application/json
+
+{
+  "initialAmount": 1000,
+  "months": 12
+}

@@ -1,0 +1,14 @@
+.calculator-form {
+  display: grid;
+  gap: 1rem;
+}
+
+button {
+  min-height: 48px;
+  border-radius: 8px;
+  font-weight: 800;
+}
+
+mat-spinner {
+  margin-right: 0.5rem;
+}

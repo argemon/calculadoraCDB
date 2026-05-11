@@ -1,0 +1,38 @@
+<main class="page-shell">
+  <section class="workspace">
+    <div class="workspace__intro">
+      <span class="eyebrow">Simulador de renda fixa</span>
+      <h1>Calculadora CDB</h1>
+      <p>
+        Projete valor bruto, liquido, lucro e imposto com rendimento mensal composto por CDI
+        e taxa bancaria configurados na API.
+      </p>
+
+      <div class="rate-strip" aria-label="Parametros do calculo">
+        <span><strong>CDI</strong> 0,9% a.m.</span>
+        <span><strong>TB</strong> 108%</span>
+        <span><strong>IR</strong> regressivo</span>
+      </div>
+    </div>
+
+    <section class="panel" aria-label="Formulario de calculo">
+      <app-calculator-form [isLoading]="(isLoading$ | async) ?? false" (calculate)="calculate($event)" />
+    </section>
+  </section>
+
+  @if (errorMessage) {
+    <section class="feedback feedback--error">
+      <mat-icon>error</mat-icon>
+      <span>{{ errorMessage }}</span>
+    </section>
+  }
+
+  @if (result) {
+    <app-investment-result [result]="result" />
+  } @else {
+    <section class="empty-state">
+      <mat-icon>monitoring</mat-icon>
+      <span>Informe os dados para visualizar o resultado da simulacao.</span>
+    </section>
+  }
+</main>
